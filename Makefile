@@ -14,6 +14,7 @@ M ?= $(shell pwd)
 ifeq ($(WLAN_ROOT),)
 KBUILD_OPTIONS += \
     WLAN_ROOT=vendor/qcom/opensource/wlan/qcacld-3.0/.qca6490 \
+    WLAN_PLATFORM_ROOT=vendor/qcom/opensource/wlan/platform \
     WLAN_COMMON_ROOT=cmn \
     WLAN_COMMON_INC=vendor/qcom/opensource/wlan/qcacld-3.0/cmn \
     WLAN_FW_API=vendor/qcom/opensource/wlan/fw-api \
