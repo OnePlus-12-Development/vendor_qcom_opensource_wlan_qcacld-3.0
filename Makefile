@@ -38,6 +38,8 @@ KBUILD_OPTIONS += \
     WLAN_CTRL_NAME=wlan
 endif
 
+KBUILD_OPTIONS += KBUILD_EXTRA_SYMBOLS=$(ANDROID_BUILD_TOP)/out/vendor/qcom/opensource/wlan/platform/Module.symvers
+
 all:
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) modules $(KBUILD_OPTIONS)
 
