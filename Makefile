@@ -13,13 +13,13 @@ M ?= $(shell pwd)
 
 ifeq ($(WLAN_ROOT),)
 KBUILD_OPTIONS += \
-    WLAN_ROOT=vendor/qcom/opensource/wlan/qcacld-3.0/.qca6490 \
+    WLAN_ROOT=vendor/qcom/opensource/wlan/qcacld-3.0/.kiwi_v2 \
     WLAN_PLATFORM_ROOT=vendor/qcom/opensource/wlan/platform \
     WLAN_COMMON_ROOT=cmn \
     WLAN_COMMON_INC=vendor/qcom/opensource/wlan/qcacld-3.0/cmn \
     WLAN_FW_API=vendor/qcom/opensource/wlan/fw-api \
     CONFIG_QCA_CLD_WLAN=m \
-    CONFIG_CNSS_QCA6490=y \
+    CONFIG_CNSS_KIWI_V2=y \
     CONFIG_CNSS_OUT_OF_TREE=y \
     CONFIG_CNSS2=m \
     CONFIG_CNSS2_QMI=y \
@@ -28,10 +28,10 @@ KBUILD_OPTIONS += \
     CONFIG_CNSS_GENL=m \
     CONFIG_WCNSS_MEM_PRE_ALLOC=m \
     CONFIG_CNSS_UTILS=m \
-    WLAN_PROFILE=qca6490 \
+    WLAN_PROFILE=kiwi_v2 \
     DYNAMIC_SINGLE_CHIP= \
-    MODNAME=qca6490 \
-    DEVNAME=qca6490 \
+    MODNAME=kiwi_v2 \
+    DEVNAME=kiwi_v2 \
     BOARD_PLATFORM=pineapple \
     WLAN_CTRL_NAME=wlan
 endif
